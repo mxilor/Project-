@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Аквапарк AquaFun</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="#">
+        <span class="logo-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+            <path d="M12 3c3.6 4.1 6.5 7.3 6.5 10.3A6.5 6.5 0 0 1 5.5 13.3C5.5 10.3 8.4 7.1 12 3Z" />
+          </svg>
+        </span>
+        AquaFun
+      </a>
+      <nav class="nav">
+        <a href="#slides">Горки</a>
+        <a href="#zones">Зоны</a>
+        <a href="#tickets">Билеты</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn btn-yellow" href="tel:+7-000-000-00-00">+7 (000) 00-00-00</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Аквапарк <span>AquaFun</span></h1>
+        <p>Круглогодичный аквапарк: 12 горок, 5 бассейнов и термальная зона. Вода +30 °C в любой день года.</p>
+        <a class="btn btn-yellow" href="#tickets">Купить билет</a>
+      </div>
+      <div class="hero-card">
+        <div><span class="num">12</span><span>горок и аттракционов</span></div>
+        <div><span class="num">+30 °C</span><span>температура воды</span></div>
+        <div><span class="num">4 000 м²</span><span>площадь акватории</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <section class="panel" id="slides">
+      <h2>Горки</h2>
+      <p class="sub">Листайте карусель стрелками или точками. Что бы увидеть</p>
+
+      <div class="carousel">
+        <div class="line" id="line">
+          <div class="slide">
+            <img src="img/slide1.jpg" alt="Горка Камикадзе">
+            <div class="slide-text">
+              <span class="age age-16">16+</span>
+              <h3>«Камикадзе»</h3>
+              <p>Почти вертикальный спуск с высоты 18 метров, скорость до 60 км/ч. Самый экстремальный спуск в
+                аквапарке.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/slide2.jpg" alt="Горка Вихрь">
+            <div class="slide-text">
+              <span class="age age-12">12+</span>
+              <h3>«Вихрь»</h3>
+              <p>Закрытая винтовая труба длиной 90 метров с подсветкой внутри. Повороты идут один за другим.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/slide3.jpg" alt="Спуск Рафт-река">
+            <div class="slide-text">
+              <span class="age age-8">8+</span>
+              <h3>«Рафт-река»</h3>
+              <p>Семейный спуск на большом круге: садятся 2–4 человека и катятся вместе.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/slide4.jpg" alt="Детские горки">
+            <div class="slide-text">
+              <span class="age age-3">3+</span>
+              <h3>Детские горки</h3>
+              <p>Три пологих спуска в детском городке. Вода +33 °C, рядом всегда инструктор.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="ctrl prev" id="prev">&#8592;</button>
+        <button class="ctrl next" id="next">&#8594;</button>
+
+        <div class="dots">
+          <button class="dot active"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Возрастной рейтинг горок</h3>
+      <table class="table">
+        <tr>
+          <th>Горка</th>
+          <th>Возраст</th>
+          <th>Кто может кататься</th>
+        </tr>
+        <tr>
+          <td><b>«Камикадзе»</b></td>
+          <td><span class="age age-16">16+</span></td>
+          <td>рост от 140 см, вес до 110 кг</td>
+        </tr>
+        <tr>
+          <td><b>«Вихрь»</b></td>
+          <td><span class="age age-12">12+</span></td>
+          <td>рост от 130 см</td>
+        </tr>
+        <tr>
+          <td><b>«Рафт-река»</b></td>
+          <td><span class="age age-8">8+</span></td>
+          <td>рост от 120 см, дети с взрослым</td>
+        </tr>
+        <tr>
+          <td><b>Детские горки</b></td>
+          <td><span class="age age-3">3+</span></td>
+          <td>дети до 10 лет, с родителем</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="zones">
+      <h2 class="sec-title">Зоны аквапарка</h2>
+      <p class="sec-text">Четыре зоны: от спокойной термы до высоких горок. В каждой карточке оставлено место под фото.
+      </p>
+
+      <div class="zones">
+        <div class="zone">
+          <div class="zphoto">Фото зоны</div>
+          <div class="ztext">
+            <h3>Волновой бассейн</h3>
+            <p>Волны до метра каждые 30 минут. Глубина от 0,4 до 1,8 м.</p>
+          </div>
+        </div>
+        <div class="zone zone-2">
+          <div class="zphoto">Фото зоны</div>
+          <div class="ztext">
+            <h3>Горки</h3>
+            <p>12 спусков: от экстремальной «камикадзе» до мягких слайдов.</p>
+          </div>
+        </div>
+        <div class="zone zone-3">
+          <div class="zphoto">Фото зоны</div>
+          <div class="ztext">
+            <h3>Термальная зона</h3>
+            <p>Сауна, хаммам и чаши с водой до +38 °C. Только для взрослых.</p>
+          </div>
+        </div>
+        <div class="zone zone-4">
+          <div class="zphoto">Фото зоны</div>
+          <div class="ztext">
+            <h3>Детский городок</h3>
+            <p>Мелкий бассейн +33 °C, мини-горки и брызгалки.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Фото термальной зоны</h3>
+      <div class="pboxes">
+        <div class="pbox"><b>Финская сауна</b></div>
+        <div class="pbox"><b>Хаммам</b></div>
+        <div class="pbox"><b>Термальная чаша</b></div>
+      </div>
+    </section>
+
+    <section class="panel" id="tickets">
+      <h2>Билеты</h2>
+      <p class="sub">Один билет действует 3 часа с момента входа.</p>
+
+      <div class="tickets">
+        <div class="ticket">
+          <div class="kind">Взрослый</div>
+          <div class="price">1 200 ₽ <small>/ 3 часа</small></div>
+          <ul>
+            <li>Все горки и бассейны</li>
+            <li>Термальная зона</li>
+            <li>Шкафчик и фен</li>
+          </ul>
+          <p class="note">1 500 ₽ в выходные</p>
+          <a class="btn" href="#order">Оформить</a>
+        </div>
+
+        <div class="ticket ticket-2">
+          <div class="kind">Детский · 4–13 лет</div>
+          <div class="price">800 ₽ <small>/ 3 часа</small></div>
+          <ul>
+            <li>Детский городок</li>
+            <li>Бассейн +33 °C</li>
+            <li>До 3 лет — бесплатно</li>
+          </ul>
+          <p class="note">Рост до 140 см — с взрослым</p>
+          <a class="btn" href="#order">Оформить</a>
+        </div>
+
+        <div class="ticket ticket-3">
+          <div class="kind">Семейный · 2+2</div>
+          <div class="price">3 200 ₽ <small>/ 3 часа</small></div>
+          <ul>
+            <li>Два шкафчика рядом</li>
+            <li>Комплект полотенец</li>
+            <li>Действует без выходных</li>
+          </ul>
+          <p class="note">Вместо 3 600 ₽</p>
+          <a class="btn" href="#order">Оформить</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="order">
+      <h2>Оформление билета</h2>
+      <p class="sub">Выберите тип билета, дату и время — стоимость посчитается сама.</p>
+
+      <div class="order">
+        <div>
+          <p class="label">Тип билета</p>
+          <div class="types">
+            <label class="type">
+              <input type="radio" name="type" value="adult" checked>
+              <span>Взрослый<small>1 200 ₽ · все горки и термальная зона</small></span>
+            </label>
+            <label class="type">
+              <input type="radio" name="type" value="child">
+              <span>Детский · 4–13 лет<small>800 ₽ · детский городок и бассейн +33 °C</small></span>
+            </label>
+            <label class="type">
+              <input type="radio" name="type" value="family">
+              <span>Семейный · 2+2<small>3 200 ₽ · два шкафчика и полотенца</small></span>
+            </label>
+          </div>
+
+          <div class="fields">
+            <div>
+              <label class="label" for="date">Дата</label>
+              <input type="date" id="date" value="2026-11-21">
+            </div>
+            <div>
+              <label class="label" for="time">Время</label>
+              <select id="time">
+                <option>12:00</option>
+                <option>14:00</option>
+                <option>16:00</option>
+                <option>18:00</option>
+                <option>20:00</option>
+              </select>
+            </div>
+            <div>
+              <label class="label" for="qty">Кол-во</label>
+              <input type="number" id="qty" min="1" max="10" value="2">
+            </div>
+          </div>
+
+          <div class="fields two">
+            <div>
+              <label class="label" for="name">Имя</label>
+              <input type="text" id="name" placeholder="Как вас зовут">
+            </div>
+            <div>
+              <label class="label" for="phone">Телефон</label>
+              <input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+            </div>
+          </div>
+        </div>
+
+        <div class="summary">
+          <div class="summary-row"><span id="sum-name">Взрослый × 2</span><span id="sum-price">2 400 ₽</span></div>
+          <div class="summary-row"><span>Дата и сеанс</span><span id="sum-date">21.11.2026, 12:00</span></div>
+          <div class="summary-row"><span>Срок действия</span><span>3 часа</span></div>
+          <div class="summary-row discount"><span>Скидка онлайн 10 %</span><span id="sum-sale">−240 ₽</span></div>
+          <div class="total"><span>Итого</span><span id="sum-total">2 160 ₽</span></div>
+          <button class="btn btn-yellow" type="button">Оформить билет</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="contacts">
+      <h2>Контакты</h2>
+      <p class="sub">Как нас найти и когда мы работаем.</p>
+
+      <div class="contacts">
+        <div>
+          <h3>Адрес</h3>
+          <p>Омск, ул. Название, 00</p>
+          <h3>Телефон</h3>
+          <p><a href="tel:+7-000-000-00-00">+7 (000) 00-00-00</a></p>
+          <h3>График работы</h3>
+          <table class="table hours">
+            <tr>
+              <td>Пн–Чт</td>
+              <td>12:00–21:00</td>
+            </tr>
+            <tr>
+              <td>Пятница</td>
+              <td>12:00–22:00</td>
+            </tr>
+            <tr>
+              <td>Сб–Вс</td>
+              <td>10:00–22:00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="map">Здесь будет карта<br>(встроить Яндекс.Карты)</div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <div class="logo">AquaFun</div>
+        <p>Аквапарк в Омске</p>
+      </div>
+      <p>+7 (000) 00-00-00<br>AquaFun@mail.ru</p>
+      <p class="copy">© 2026 Аквапарк AquaFun</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
